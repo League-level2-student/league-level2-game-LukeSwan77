@@ -103,7 +103,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener{
 		// TODO Auto-generated method stub
 		if (arg0.getKeyCode()==KeyEvent.VK_SPACE){
 			manager.addProjectile(rocket.getProjectile());
-			System.out.println("hi");
+			
 		}
 		if (arg0.getKeyCode()==KeyEvent.VK_ENTER) {
 		    if (currentState == END) {
