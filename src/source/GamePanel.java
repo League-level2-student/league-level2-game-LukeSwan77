@@ -22,6 +22,7 @@ public class gamePanel extends JPanel implements ActionListener, KeyListener{
 	int currentState = MENU;
 	Font titleFont;
 	Timer frameDraw;
+	frog froppy = new frog (250, 2500, 50, 50);
 	gamePanel(){
 		titleFont = new Font("Ariel", Font.PLAIN, 36);
 		frameDraw = new Timer(1000/60,this);
@@ -54,6 +55,7 @@ public class gamePanel extends JPanel implements ActionListener, KeyListener{
 		g.setFont(titleFont);
 		g.setColor(Color.YELLOW);
 		g.drawString("GAME OVER", 105, 100);
+		froppy.draw(g);
 	}
 	void drawEndState(Graphics g) {
 		
